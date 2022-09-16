@@ -1,10 +1,8 @@
-module.exports = async function(app) {
+module.exports = async function(app, cfg) {
 
-	app.get("/", async function(res, req){
+	app.get("/", async function(req, res){
 		res.render('index', {
-			
 		});
 	});
-
 }
 
