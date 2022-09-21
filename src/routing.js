@@ -19,7 +19,7 @@ module.exports = async function(app, cfg) {
 	})
 
 	// Contact Form 
-	app.get('/backend/forms/submit/contact', async function(req, res){
+	app.post('/backend/forms/submit/contact', async function(req, res){
 		let name = req.body.name.replaceAll("'", "''").replaceAll('"', '""').replaceAll('`', '``');
 		let email = req.body.email.replaceAll("'", "''").replaceAll('"', '""').replaceAll('`', '``');
 		let subject = req.body.subject.replaceAll("'", "''").replaceAll('"', '""').replaceAll('`', '``');
