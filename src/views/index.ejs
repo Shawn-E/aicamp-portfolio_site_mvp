@@ -1,13 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="/assets/main.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shawn Engmann - Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <title>Adren Screenshots</title>
 </head>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(0, 212, 255, 1);
+    /* or add it to the track */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 0, 0, 0);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(136, 136, 136, 0.075);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(136, 136, 136, 0.445);
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: rgba(136, 136, 136, 0);
+  }
+
+  body {
+    background: rgb(34, 44, 141);
+    background: -moz-linear-gradient(90deg, rgba(34, 44, 141, 1) 54%, rgba(0, 212, 255, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(34, 44, 141, 1) 54%, rgba(0, 212, 255, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(90deg, rgba(34, 44, 141, 1) 54%, rgba(0, 212, 255, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#222c8d", endColorstr="#00d4ff", GradientType=1);
+  }
+
+  .nav-link {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1em;
+    color: white;
+  }
+
+  .nav-link:hover {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1em;
+    color: white;
+  }
+
+
+
+  nav {
+    position: absolute;
+  }
+
+  .navbar-nav {
+    margin: auto;
+  }
+
+  .navbar .container-fluid {
+    background-color: transparent;
+  }
+
+  .nav-item a {
+    color: #fff;
+  }
+
+  .navbar-brand img {
+    height: auto;
+  }
+
+  .nav-item {
+    margin: 6%;
+  }
+
+  #top {
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    color: white;
+  }
+
+  #top h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    padding-top: 25%;
+  }
+
+  .reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+
+  .reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s ease;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+
+  #text01 {
+    font-family: 'Ubuntu', sans-serif;
+    width: 75%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .button-row2 {
+    justify-content: space-evenly;
+    margin-top: 2rem;
+  }
+
+  .button-row2 a {
+    text-decoration: none;
+    padding: 0.8rem 3rem;
+    border-radius: 0.3em;
+    background-color: #0d6efd;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .button-row2 a:hover {
+    background-color: #0a58cc;
+  }
+
+
+
+  .button-row {
+    justify-content: space-evenly;
+    margin-top: 1.7rem;
+  }
+
+  .button-row a {
+    text-decoration: none;
+    padding: 0.8rem 3rem;
+    border-radius: 0.5em;
+    background-color: #0d6efd;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .button-row a:hover {
+    text-decoration: none;
+    padding: 0.8rem 2.8rem;
+    border-radius: 0.5em;
+    background-color: #0a58cc;
+    color: white;
+  }
+
+  #features #img2 {
+    width: 40rem;
+    margin-right: 10%;
+  }
+
+  .feat1 {
+    display: flex;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  #split001 {
+    color: white;
+    fill: white;
+    background-color: white;
+    white-space: 0;
+    width: 10%;
+    border-color: white;
+  }
+
+  .feat2 {
+    display: flex;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .featImg #img1 {
+    margin-left: 10%;
+    width: 40rem;
+  }
+
+  .footer {
+    width: 100%;
+    height: 4rem;
+  }
+
+  .footer .container .content {
+    text-align: center;
+    color: White;
+    padding: 0.5em 0.5em;
+  }
+
+  .footer .container .content p {
+    margin-bottom: 0;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, ul, li, a, .btn{
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .btn:hover {
+    color: white;
+  }
+
+
+
+</style>
+
+<script>
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", reveal);
+  window.addEventListener("scroll", reveal);
+
+  // To check the scroll position on page load
+  reveal();
+</script>
+
 <body>
-    Hello World
+  <div class="container">
+    <section id="top">
+      <h1>Shawn Engmann</h1>
+      <br>
+      <p id="text01" class="reveal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa possimus eius numquam
+        voluptas suscipit cumque velit! Suscipit, eveniet. Repellat, quo assumenda blanditiis magni ad explicabo harum
+        commodi quaerat sed provident.</p>
+      <br>
+      <div class="button-row">
+        <a href="#" class="reveal">Call To Action</a>
+      </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="reveal" id="features">
+        <h1 class="text-left">About Me</h1>
+        <hr class="border border-1 opacity-100 split001 w-10">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione vitae sed est cum veniam vel repudiandae amet facere sunt rerum odit molestiae omnis porro accusamus debitis similique dolor optio fugit reiciendis officia, tenetur velit. Libero quo nostrum et atque expedita! Laudantium facere soluta culpa perferendis cumque, vero dicta tempore eveniet, delectus animi provident quo rem deserunt quasi officiis iste totam. Omnis, dicta nemo expedita odit quas natus, quo dolorum enim possimus ab quae, modi accusantium? Repudiandae beatae odio doloribus in soluta delectus, quod sunt voluptas. Corporis animi nobis repellendus voluptas, deleniti perferendis praesentium sequi vitae molestias, commodi est natus nostrum nulla. Amet, placeat vel nihil aspernatur enim laboriosam accusantium culpa eligendi veritatis reprehenderit voluptatibus nobis totam possimus, atque, soluta ullam nulla aut et quae? Explicabo optio sit cupiditate dignissimos illum laboriosam, placeat adipisci vitae? Culpa nobis autem sequi animi sunt voluptas nam accusantium delectus, facilis voluptatem quae, nesciunt possimus aspernatur, repellendus ipsam expedita ab saepe deserunt nisi vitae laudantium atque ex? Accusamus eveniet quas praesentium dicta temporibus officiis deserunt aliquid, excepturi molestias rerum voluptatibus numquam nesciunt tenetur maiores voluptate illo eligendi, nostrum dignissimos reiciendis est! Illo veritatis doloremque, velit aliquam excepturi quibusdam molestiae quas earum facere odio quis facilis.</p>
+        <br> <br>
+        <h1 class="text-left">Projects</h1>
+        <hr class="border border-1 opacity-100 split001 w-10">
+        <ul class="">
+            <li class="">Project 1</li>
+            <li class="">Project 2</li>
+            <li class="">Project 3</li>
+        </ul>
+        <br> <br>
+        <h1 class="text-left">Skills</h1>
+        <hr class="border border-1 opacity-100 split001 w-10">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione vitae sed est cum veniam vel repudiandae amet facere sunt rerum odit molestiae omnis porro accusamus debitis similique dolor optio fugit reiciendis officia, tenetur velit. Libero quo nostrum et atque expedita! Laudantium facere soluta culpa perferendis cumque, vero dicta tempore eveniet, delectus animi provident quo rem deserunt quasi officiis iste totam. Omnis, dicta nemo expedita odit quas natus, quo dolorum enim possimus ab quae, modi accusantium? Repudiandae beatae odio doloribus in soluta delectus, quod sunt voluptas. Corporis animi nobis repellendus voluptas, deleniti perferendis praesentium sequi vitae molestias, commodi est natus nostrum nulla. Amet, placeat vel nihil aspernatur enim laboriosam accusantium culpa eligendi veritatis reprehenderit voluptatibus nobis totam possimus, atque, soluta ullam nulla aut et quae? Explicabo optio sit cupiditate dignissimos illum laboriosam, placeat adipisci vitae? Culpa nobis autem sequi animi sunt voluptas nam accusantium delectus, facilis voluptatem quae, nesciunt possimus aspernatur, repellendus ipsam expedita ab saepe deserunt nisi vitae laudantium atque ex? Accusamus eveniet quas praesentium dicta temporibus officiis deserunt aliquid, excepturi molestias rerum voluptatibus numquam nesciunt tenetur maiores voluptate illo eligendi, nostrum dignissimos reiciendis est! Illo veritatis doloremque, velit aliquam excepturi quibusdam molestiae quas earum facere odio quis facilis.</p>
+        <br>
+        <h4>My Stack</h4>
+        <ul class="">
+            <li class="">HTML</li>
+            <li class="">CSS</li>
+            <li class="">JS</li>
+          </ul>
+          <div class="progress mb-4">
+            <div class="progress-bar w-40" role="progressbar" aria-label="Basic example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">HTML</div>
+          </div>
+          <div class="progress mb-4">
+            <div class="progress-bar w-50" role="progressbar" aria-label="Basic example" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">CSS</div>
+          </div>
+          <div class="progress mb-4">
+            <div class="progress-bar w-100" role="progressbar" aria-label="Basic example" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">JS</div>
+          </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+  </div>
+ 
 </body>
+
 </html>

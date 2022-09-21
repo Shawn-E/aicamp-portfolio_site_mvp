@@ -14,7 +14,7 @@ module.exports = async function(app, cfg) {
 	// Contact Page
 	app.get('/contact', async function(req, res){
 		res.render('contact', {
-
+			
 		})
 	})
 
